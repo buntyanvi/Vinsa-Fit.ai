@@ -1,0 +1,137 @@
+import { GithubIcon, LinkedinIcon, Globe2Icon, ZapIcon } from "lucide-react";          {/* Links Container */}
+          <div className="relative p-4 border border-[#ff2a6d30] rounded-lg bg-background/30 backdrop-blur-sm group transition-transform duration-300 hover:translate-y-[-2px]">
+            {/* Corner Elements */}
+            <div className="absolute top-0 left-0 w-2 h-2 border-l border-t border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            <div className="absolute top-0 right-0 w-2 h-2 border-r border-t border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            <div className="absolute bottom-0 left-0 w-2 h-2 border-l border-b border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            <div className="absolute bottom-0 right-0 w-2 h-2 border-r border-b border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            
+            {/* Top line animation */}
+            <div className="absolute top-0 left-0 w-0 h-[1px] bg-[#ff2a6d40] group-hover:w-full transition-all duration-700"></div>be2Icon, ZapIcon } from "lucide-react";
+import Link from "next/link";
+
+const Footer = () => {
+  return (
+    <footer className="border-t border-[#ff2a6d40] bg-background/80 backdrop-blur-sm">
+      {/* Top border glow */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[#ff2a6d40] to-transparent"></div>
+
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Logo and Copyright */}
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <Link
+              href="/"
+              className="flex items-center gap-2 hover:scale-105 transition-transform duration-300"
+            >
+              <div className="p-1 bg-[#ff2a6d20] rounded group-hover:bg-[#ff2a6d30] transition-colors relative overflow-hidden">
+                <ZapIcon className="w-4 h-4 text-[#ff2a6d] animate-pulse" />
+                {/* Subtle scan line */}
+                <div className="absolute top-0 left-0 h-full w-px bg-[#ff2a6d20] animate-scan-horizontal"></div>
+              </div>
+              <span className="text-xl font-bold font-mono">
+                Vinsa<span className="text-[#ff2a6d]">Fit</span>.ai
+              </span>
+            </Link>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Lagishetti Vignesh - All rights reserved
+            </p>
+          </div>
+
+          {/* Links Container */}
+          <div className="relative p-4 border border-[#ff2a6d30] rounded-lg bg-background/30 backdrop-blur-sm group transition-transform duration-300 hover:translate-y-[-2px]">
+            {/* Corner Elements */}
+            <div className="absolute top-0 left-0 w-2 h-2 border-l border-t border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            <div className="absolute top-0 right-0 w-2 h-2 border-r border-t border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            <div className="absolute bottom-0 left-0 w-2 h-2 border-l border-b border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+            <div className="absolute bottom-0 right-0 w-2 h-2 border-r border-b border-[#ff2a6d40] group-hover:border-[#ff2a6d80] transition-colors"></div>
+
+            {/* Top line animation */}
+            <div className="absolute top-0 left-0 w-0 h-[1px] bg-[#ff2a6d40] group-hover:w-full transition-all duration-700"></div>
+
+            {/* Links Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-2 text-sm">
+              <Link
+                href="/about"
+                className="text-[#ff8fa3] hover:text-[#ff2a6d] hover:translate-x-1 transition-all duration-300"
+              >
+                About
+              </Link>
+              <Link
+                href="/terms"
+                className="text-[#ff758c] hover:text-[#ff2a6d] hover:translate-x-1 transition-all duration-300"
+              >
+                Terms
+              </Link>
+              <Link
+                href="/privacy"
+                className="text-[#ff4d6d] hover:text-[#ff2a6d] hover:translate-x-1 transition-all duration-300"
+              >
+                Privacy
+              </Link>
+              <Link
+                href="/contact"
+                className="text-[#ff8fa3] hover:text-[#ff2a6d] hover:translate-x-1 transition-all duration-300"
+              >
+                Contact
+              </Link>
+              <Link
+                href="/blog"
+                className="text-[#ff758c] hover:text-[#ff2a6d] hover:translate-x-1 transition-all duration-300"
+              >
+                Blog
+              </Link>
+              <Link
+                href="/help"
+                className="text-[#ff4d6d] hover:text-[#ff2a6d] hover:translate-x-1 transition-all duration-300"
+              >
+                Help
+              </Link>
+            </div>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://github.com/buntyanvi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ff8fa3] hover:text-[#ff2a6d] hover:scale-110 transition-all duration-300"
+            >
+              <GithubIcon className="w-5 h-5" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/vignesh-lagishetti-69a102219/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ff758c] hover:text-[#ff2a6d] hover:scale-110 transition-all duration-300"
+            >
+              <LinkedinIcon className="w-5 h-5" />
+            </Link>
+            <Link
+              href="https://www.vigneshlagishetti.top/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ff4d6d] hover:text-[#ff2a6d] hover:scale-110 transition-all duration-300"
+            >
+              <Globe2Icon className="w-5 h-5" />
+            </Link>
+          </div>
+
+          {/* Status */}
+          <div className="flex items-center gap-2 px-3 py-2 border border-[#ff2a6d30] rounded-md bg-background/50 hover:border-[#ff2a6d50] transition-all duration-300 hover:translate-y-[-2px] group">
+            <div className="w-2 h-2 rounded-full bg-green-500 group-hover:animate-pulse"></div>
+            <span className="text-xs font-mono text-[#ff8fa3] group-hover:text-[#ff2a6d] transition-colors">
+              SYSTEM OPERATIONAL
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom border */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[#ff2a6d20] to-transparent"></div>
+    </footer>
+  );
+};
+
+export default Footer;
