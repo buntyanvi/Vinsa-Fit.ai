@@ -238,10 +238,15 @@ const GenerateProgramPage = () => {
 
                 <div className="relative w-full h-full rounded-full bg-card flex items-center justify-center border border-border overflow-hidden group-hover/avatar:border-primary/50 transition-all duration-300">
                   <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-secondary/10"></div>
-                  <img
+                  <Image
                     src="/ai-avatar.png"
                     alt="AI Assistant"
+                    width={128}
+                    height={128}
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      console.error("Error loading AI avatar image");
+                    }}
                   />
                   {/* Scan effect */}
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-transparent opacity-0 group-hover/avatar:opacity-100 animate-scanline"></div>
