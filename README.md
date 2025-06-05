@@ -19,34 +19,6 @@
   <p>A futuristic fitness platform that generates personalized workout and diet plans through an interactive voice AI assistant. Built with modern web technologies and a sleek cyberpunk aesthetic.</p>
 </div>
 
-![Demo App](/public/screenshot-for-readme.png)
-
-<br />
-
-<div align="center">
-  <p align="center">
-    <a href="#demo">View Demo</a>
-    ·
-    <a href="#highlights">Highlights</a>
-    ·
-    <a href="#features">Features</a>
-    ·
-    <a href="#technologies-used">Tech Stack</a>
-    ·
-    <a href="#getting-started">Getting Started</a>
-  </p>
-</div>
-
-<br />
-
-## Demo
-
-<div align="center">
-  <img src="/public/screenshot-for-readme.png" alt="Vinsa-Fit.ai Demo" width="80%" />
-</div>
-
-<br />
-
 ## Highlights
 
 <table>
@@ -469,5 +441,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/yourusername">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/buntyanvi">Lagishetti Vignesh</a>
 </p>
