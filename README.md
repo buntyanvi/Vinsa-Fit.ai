@@ -1,5 +1,4 @@
-# 
-    Vinsa-Fit.ai 🏋️‍♂️
+# Vinsa-Fit.ai 🏋️‍♂️
 
 <div align="center">
   <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 15" />
