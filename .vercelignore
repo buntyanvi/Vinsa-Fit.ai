@@ -1,0 +1,13 @@
+# Ignore development files
+.vscode
+.github
+.git
+node_modules
+
+# Ignore test files
+vapi-test-script.md
+restart.bat
+
+# Ignore PDF/PPTX files as they are for documentation, not needed for deployment
+*.pdf
+*.pptx

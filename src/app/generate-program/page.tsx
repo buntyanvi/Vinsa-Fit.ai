@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { vapi } from "@/lib/vapi";
 import { useUser } from "@clerk/nextjs";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
@@ -244,7 +245,7 @@ const GenerateProgramPage = () => {
                     width={128}
                     height={128}
                     className="w-full h-full object-cover"
-                    onError={(e) => {
+                    onError={() => {
                       console.error("Error loading AI avatar image");
                     }}
                   />
