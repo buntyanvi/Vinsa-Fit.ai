@@ -1,0 +1,8 @@
+node_modules
+.next
+build
+out
+public
+convex/_generated
+**/*.tsx
+**/*.ts
