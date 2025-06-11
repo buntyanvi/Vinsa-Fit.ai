@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
-  swcMinify: true,
   images: {
     unoptimized: true,
     domains: [],
@@ -21,12 +20,6 @@ const nextConfig: NextConfig = {
   eslint: {
     // Skip ESLint checking during build for faster deployments
     ignoreDuringBuilds: true,
-  },
-  experimental: {
-    // Use turborepo for optimized builds
-    turbotrace: {
-      logLevel: 'error',
-    },
   }
 };
 
